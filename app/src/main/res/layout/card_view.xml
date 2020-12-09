@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radious_cardview"
+    android:elevation="1dp"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginTop="@dimen/card_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fotoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="@dimen/medium_padding"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/desc_foto_mascota_img"
+            card_view:srcCompat="@drawable/pet1"></ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="#FFFFFF"
+                android:contentDescription="botonRating"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icons8_dog_bone_48">
+            </ImageButton>
+            <TextView
+                android:id="@+id/txtNombreMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginRight="@dimen/small_padding"
+                android:text="@string/desc_nombre_masctoa"
+                android:textSize="16dp"
+                android:layout_gravity="center_vertical">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/distancia_hueso_amarillo_blanco"
+                card_view:srcCompat="@drawable/icons8_dog_bone_yellow_48"/>
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginRight="@dimen/medium_padding"
+                android:text="@string/cant_rating"
+                android:textSize="16dp"
+                android:layout_gravity="center_vertical">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

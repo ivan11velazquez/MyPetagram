@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyPetagram</string>
+    <string name="desc_foto_mascota_img">Foto de Mascota</string>
+    <string name="desc_nombre_masctoa">Nombre de mascota</string>
+    <string name="cant_rating">5</string>
+    <string name="action_bar_star">Favoritos</string>
+    <string name="action_bar_settings">Ajustes</string>
+    <string name="label_mascotas_fav">Mascotas favoritas</string>
+</resources>
